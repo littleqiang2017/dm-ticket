@@ -1,7 +1,4 @@
-extern crate dm_ticket;
-extern crate anyhow;
-
-use anyhow::{Result, Ok};
+use anyhow::Result;
 use dm_ticket::{
     config::{load_global_config, Config},
     ticket,
