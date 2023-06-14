@@ -1,6 +1,6 @@
 accounts:
     # .damai.cn中的cookie完整字符串
-    - cookie: ""
+    - cookie: "cna=GmcEHYrUpzsCATooWcofmbyB; _samesite_flag_=true; cookie2=1e1b6bcd36b807ad68594dae958cf8f1; t=d0bf1eb6e5af3fdbe13c2ddf46220534; _tb_token_=371531eee3897; _hvn_login=18; _m_h5_tk=2149220ce8869c26be43471f1ae81faf_1686726672956; _m_h5_tk_enc=0fe3dae94b8b7a815b6b998206d5a2c3; xlly_s=1; munb=2202158747587; csg=e79d59b1; dm_nickname=%E9%BA%A6%E5%AD%900Wqsm; usercode=138645253; havanaId=2202158747587; tfstk=cFDfBbG7kVHzes9Gnrtrd93S8-wNa4sQfIamceixtCrMTUmbysmfLy_GhfbTQlE5.; l=fBEJenReNccIfGxTBO5alurza7794IOfhsPzaNbMiIEGa1k5tFNOtNC11CkDSdtjgTfj-F-ygJ-c1dHe87aLSOkDBeYBerBEMxv9-iQWnr1..; isg=BOjoRrK6GAKW-jRyKxNpLp7YudD6EUwbkenw-aIZkmNW_YxnSiBGqld89ZUNTQTz"
       remark: 账号1
 
       # 轮询判断当前时间是否大于等于可以请求数据的时间, 单位ms
