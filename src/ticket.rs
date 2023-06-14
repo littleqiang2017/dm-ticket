@@ -135,19 +135,25 @@ impl DmTicket {
                         num = viewer_list.as_array().unwrap().len();
                     }
                     if self.account.ticket.real_names.is_empty() {
-                        info!("未配置实名观演人, 默认选择前{}位观演人...", self.account.ticket.num);
+                        info!(
+                            "未配置实名观演人, 默认选择前{}位观演人...",
+                            self.account.ticket.num
+                        );
                         for i in 0..num {
                             item["fields"]["viewerList"][i]["isUsed"] = true.into();
                         }
-                    }else{
-                        for i in 0..item["fields"]["viewerList"].as_array().unwrap_or(&Vec::new()).len() {
+                    } else {
+                        for i in 0..item["fields"]["viewerList"]
+                            .as_array()
+                            .unwrap_or(&Vec::new())
+                            .len()
+                        {
                             let idx = i + 1;
                             if self.account.ticket.real_names.contains(&idx) {
                                 item["fields"]["viewerList"][i]["isUsed"] = true.into();
                             }
                         }
                     }
-                    
                 }
                 order_data[key] = item;
             } else {

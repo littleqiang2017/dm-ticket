@@ -12,7 +12,7 @@ networks:
     
 
 services:
-  # https://github.com/littleqiang2017/dm-ticket.git
+  # https://github.com/ClassmateLin/dm-ticket
   dm-ticket:
     image: littleqiang2017/dm-ticket:v0.1.5
     container_name: dm-ticket
@@ -31,7 +31,7 @@ services:
       DNS_SERVER: "172.88.0.3"
 
   zzdns:
-    # https://github.com/littleqiang2017/zzdns.git
+    # https://github.com/ClassmateLin/zzdns
     image: littleqiang2017/zzdns:latest
     restart: always
     privileged: true
